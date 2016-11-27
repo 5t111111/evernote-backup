@@ -48,7 +48,7 @@ Model.new(:evernote_backup, 'Backups exported Evernote archive') do
   #
   store_with Local do |local|
     local.path       = File.join(PATH_TO_ROOT, 'Backup', 'backups')
-    local.keep       = 5
+    local.keep       = 3
     # local.keep       = Time.now - 2592000 # Remove all backups older than 1 month.
   end
 
